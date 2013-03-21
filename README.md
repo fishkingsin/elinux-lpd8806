@@ -13,7 +13,7 @@ www.fishkingsin.com
 
 INTRODUCTION
 =====================
-This library is modified from [elinux-lpd8806](https://bitbucket.org/xdseed/elinux-lpd8806/src/) and designed to help you get started using the Total Control
+This library is modified from [elinux-tcl](https://bitbucket.org/xdseed/elinux-lpd8806/src/) and designed to help you get started using the Total Control
 Lighting RGB LED pixels from www.coolneon.com on your BeagleBone.
 This library should work on any linux platform in which the spidev kernel
 module has been included.
