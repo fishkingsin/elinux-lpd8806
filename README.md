@@ -34,7 +34,7 @@ When these chips are chained together, with the inputs of the second chip connec
 
 The color value is 7 bits per color, for 128 * 128 * 128 = 2,097,152 colors.
 
-finally set 4 zeor byte and the end of the buffer which mean length_of_led x 3 + 4 is the length of your total buffer size
+finally set 4 zero byte and the end of the buffer which mean length_of_led x 3 + 4 is the length of your total buffer size
 <!-- The p9813 chip operates with a voltage between 5V and 6.5V. In addition to V+
 and Ground inputs, the chip also has a clock input, serial data input, clock
 output, and serial data output. The p9813 chip has a maximum serial clock rate
