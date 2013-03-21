@@ -99,21 +99,22 @@ HARDWARE
 The LPD8806 strands, sold by http://www.adafruit.com/products/306, have 4 wires
 running from pixel to pixel. These wires are color coded in the following way:
 
-Red: Vcc (+5 to +6.5 V)
-White: Data
-Green: Clock
-Blue: Ground
+GND: Ground
+DI: Data
+CI: Clock
++5V: Vcc (+5 to +6.5 V)
 
 Each pixel has an input set of wires and an output set. Usually there is an
-arrow indicating the direction on the casing of the LED/chip unit. It is more
+arrow indicating the direction on the casing of the LED/chip unit.
+<!--  It is more
 convenient to use the connectors which you can purchase from coolneon.com. You
-will need the female connector to send data to the pixels. The wire coloring
-on the connector is slightly different:
+will need the female connector to send data to the pixels.  -->
+The wire coloring on the connector is slightly different:
 
-Red: Vcc (+5 to +6.5 V)
-Green: Data
-Yellow: Clock
-Blue (or Black): Ground
+GND: Ground
+DO: Data
+CO: Clock
++5V: Vcc (+5 to +6.5 V)
 
 It is useful, though not required, to purchase the "T-connectors" sold at
 coolneon.com. The T-connectors pass through the Data and Clock lines, but
@@ -121,7 +122,7 @@ splice the Vcc and Ground lines to a 2.5mm center positive barrel connector.
 We typically find that we provide power by using a T-connector every 100
 pixels or so (depending on the application). 
 
-BEAGLEBONE CONNECTIONS
+<!-- BEAGLEBONE CONNECTIONS
 
 On the BeagleBone the following pins are configured for SPI:
 
@@ -143,7 +144,7 @@ the pixels to P9 Header Pin 1 or 2. A typical wiring diagram is shown below:
 + BeagleBone        P9 Pin 30 +---------------+ Data                        |
 +                   P9 Pin 31 +---------------+ Clock                       |
 +-----------------------------+               +-----------------------------+
-</pre>
+</pre> -->
 RASPBERRY PI CONNECTIONS
 
 On the Raspberry PI the following pins are configured for SPI:
@@ -161,11 +162,11 @@ common ground. A typical wiring diagram is shown below:
 | Pixel Power Source          |         |
 |                         GND +----+    |
 +-----------------------------+    |    |
-                                   |    |     +-----------------------------+
-+-----------------------------+    |    +-----+ V+                          |
-+                      Pin 6  +----+----------+ GND        lpd8806 Pixel        |
-+ Raspberry Pi         Pin 19 +---------------+ Data                        |
-+                      Pin 23 +---------------+ Clock                       |
++-----------------------------+    |    |     +-----------------------------+
++                      Pin 4  +----|----+-----+ 5V+                          |
++                      Pin 6  +----+----------+ GND        lpd8806 Pixel     |
++ Raspberry Pi         Pin 19 +---------------+ Clock                        |
++                      Pin 23 +---------------+ Data                         |
 +-----------------------------+               +-----------------------------+
 </pre>
 
@@ -304,3 +305,9 @@ random intervals all along the strand.
 3. lpd8806_speedtest.c - This sample program sends 10,000 images (of a single blue
 moving along a strand) to a strand of 1,250 pixels as fast as it can. It
 measures the time elapsed and calculates the number of frames per second.
+
+
+Version history
+------------
+
+### Version 0.1 (Date):20130321
