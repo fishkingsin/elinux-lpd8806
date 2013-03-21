@@ -1,9 +1,14 @@
 Total Control Lighting (p9813) Embedded Linux Library
+
 Copyright 2012 Christopher De Vries
+
 www.idolstarastronomer.com
 
+
 LPD8806 Embedded Linux Library
+
 Copyright 2013 James Kong
+
 www.fishkingsin.com
 
 INTRODUCTION
