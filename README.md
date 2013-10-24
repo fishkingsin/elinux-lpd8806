@@ -311,3 +311,7 @@ Version history
 ------------
 
 ### Version 0.1 (Date):20130321
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/fishkingsin/elinux-lpd8806/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
